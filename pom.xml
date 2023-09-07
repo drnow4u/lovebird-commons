@@ -31,13 +31,10 @@
     </pluginRepositories>
     <distributionManagement>
         <repository>
-            <id>lovebird-releases</id>
-            <url>https://nexus.yolt.io/content/repositories/releases</url>
+            <id>github</id>
+            <name>GitHub OWNER Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/OWNER/REPOSITORY</url>
         </repository>
-        <snapshotRepository>
-            <id>lovebird-snapshots</id>
-            <url>https://nexus.yolt.io/content/repositories/snapshots</url>
-        </snapshotRepository>
     </distributionManagement>
     <scm>
         <connection>scm:git:https://git.yolt.io/backend/lovebird-commons.git</connection>
@@ -109,6 +106,7 @@
         <module>postgres-autoconfigure</module>
         <module>postgres-external-test-database</module>
         <module>secrets-pipeline</module>
+        <module>security-utils</module>
         <module>spring-data-cassandra-autoconfigure-test</module>
         <module>spring-data-cassandra-autoconfigure</module>
         <module>spring-data-cassandra-model-mutation</module>
